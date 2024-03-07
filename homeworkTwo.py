@@ -123,7 +123,7 @@ def sentence_vector(sentence, model):
     return result
 
 
-# Convert gensim model to WEFE model
+# Written by Copilot
 def convert_gensim_to_wefe_model(gensim_model):
     # Check if the model is a Word2Vec model
     if isinstance(gensim_model, gensim.models.Word2Vec):
@@ -221,6 +221,7 @@ def homeworkTwo():
     print("\n")
 
     # 2.4 Bias in Word Embeddings
+
     # Create two queries
     RNSB_words = [["swedish"], ["irish"], ["mexican"], ["chinese"], ["filipino"], ["german"], ["english"], ["french"],
                   ["norwegian"], ["american"], ["indian"], ["dutch"], ["russian"], ["scottish"], ["italian"]]
@@ -282,7 +283,7 @@ def homeworkTwo():
     print(classification_report(y, preds))
     print("\n")
 
-    # Train a second linear regression model for only one word embedding
+    # Train a second linear regression model using one word embedding
     sentence_vectors = []
     for sentence in texts:
         sentence = preprocess_text(sentence)
