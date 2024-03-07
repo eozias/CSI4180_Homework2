@@ -287,7 +287,7 @@ def homeworkTwo():
     sentence_vectors = []
     for sentence in texts:
         sentence = preprocess_text(sentence)
-        sentence_vectors.append(sentence_vector(sentence, googleNews_model))
+        sentence_vectors.append(sentence_vector(sentence, glove_model))
     X = np.array(sentence_vectors)
     X = scipy.sparse.csr_matrix(X)
     m_w, m_b = sgd_for_multinomial_lr_with_ce(X, y)
